@@ -1,0 +1,22 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=File_0020Headers/@EntryIndexedValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Profile name="File Headers"&gt;&lt;XAMLCollapseEmptyTags&gt;False&lt;/XAMLCollapseEmptyTags&gt;&lt;CSUpdateFileHeader&gt;True&lt;/CSUpdateFileHeader&gt;&lt;/Profile&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">&lt;copyright company="Dionito"&gt;&#xD;
+   Copyright (c) Dionito Software 2022.&#xD;
+&#xD;
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated&#xD;
+   documentation files (the "Software"), to deal iin the Software without restriction, including without&#xD;
+   limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the&#xD;
+   Software, and to permit persons to whom the Software is furnished to do so, subject to the following&#xD;
+   conditions:&#xD;
+&#xD;
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions&#xD;
+   of the Software.&#xD;
+&#xD;
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED&#xD;
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL&#xD;
+   THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF&#xD;
+   CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER&#xD;
+   DEALINGS IN THE SOFTWARE.&#xD;
+&lt;/copyright&gt;&#xD;
+</s:String>
+	</wpf:ResourceDictionary>

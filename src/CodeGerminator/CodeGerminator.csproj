@@ -6,20 +6,31 @@
         <RootNamespace>Dionito.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
         <BaseOutputPath>..\..\out</BaseOutputPath>
         <AssemblyName>Dionito.$(MSBuildProjectName)</AssemblyName>
+        <Authors>dionito</Authors>
+        <Copyright>Copyright 2022 - dionito</Copyright>
+        <PackageId>Dionito.CodeGerminator</PackageId>
+        <Version>0.1.3</Version>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>dotnet;dionito;codegerminator;codegenerator;germinator;generator;code;csharp</PackageTags>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
       <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-      <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
-    </PropertyGroup>
+    <ItemGroup>
+        <None Include="$(OutputPath)\$(AssemblyName).dll"
+            Pack="true"
+            PackagePath="analyzers/dotnet/cs"
+            Visible="false" />
+    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
-        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" />
-        <None Include="$(OutputPath)\netstandard2.0\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.3" PrivateAssets="all" >
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
 </Project>

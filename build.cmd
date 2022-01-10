@@ -37,7 +37,7 @@ if "%target:test=%" neq "%target%" (
 :: Generate nuget packages
 if "%target:pack=%" neq "%target%" (
   echo Packaging
-  nuget pack .\src\CodeGerminator\CodeGerminator.nuspec -OutputDirectory %packagePath%
+  dotnet pack CodeGerminator.sln -o %packagePath%
 
   if ERRORLEVEL 1 exit /B 1
 )

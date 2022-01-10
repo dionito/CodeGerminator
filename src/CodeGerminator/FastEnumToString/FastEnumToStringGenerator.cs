@@ -28,12 +28,16 @@ namespace Dionito.CodeGerminator.FastEnumToString
     [Generator]
     public class FastEnumToStringGenerator : CodeGerminatorBase
     {
-        const string attributeSourceCode = @"using System;
+        const string attributeSourceCode = @"#pragma warning disable SA1633 //File header missing
+#pragma warning disable CA1050 // Declare types in namespaces
+using System;
 
 [AttributeUsage(AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
 public sealed class FastEnumToStringAttribute : Attribute
 {
-}";
+}
+#pragma warning restore CA1050
+#pragma warning restore SA1633";
 
         static void AppendEnumMember(string candidateEnumName, SyntaxNode syntaxNode, StringBuilder sourceBuilder)
         {
@@ -85,6 +89,8 @@ public sealed class FastEnumToStringAttribute : Attribute
             }
 
             var sourceBuilder = new StringBuilder();
+            sourceBuilder.AppendLine("#pragma warning disable SA1633  //File header missing");
+            sourceBuilder.AppendLine("#pragma warning disable CA1050 // Declare types in namespaces");
             sourceBuilder.AppendLine("using System;");
 
             // in case namespace is empty, to avoid adding empty using
@@ -111,6 +117,8 @@ public sealed class FastEnumToStringAttribute : Attribute
             sourceBuilder.AppendLine("        };");
             sourceBuilder.AppendLine("    }");
             sourceBuilder.AppendLine("}");
+            sourceBuilder.AppendLine("#pragma warning restore CA1050");
+            sourceBuilder.AppendLine("#pragma warning restore SA1633");
             return sourceBuilder;
         }
 

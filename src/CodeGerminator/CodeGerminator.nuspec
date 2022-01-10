@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Dionito.CodeGerminator</id>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
         <description>C# Code Generators.</description>
         <authors>dionito</authors>
         <title>Code Germinator</title>
@@ -11,8 +11,9 @@
         <summary>C# Code Generators for general use.</summary>
         <releaseNotes>
             0.1.0 - Initial release
+            0.1.1 - Fixing csproj for nuget
         </releaseNotes>
-        <tags>dionito;codegerminator;generator;germinator</tags>
+        <tags>dionito;codegerminator;generator;germinator;codegenerator;code;</tags>
         <license type="expression">MIT</license>
         <dependencies>
             <group targetFramework="netstandard2.0" />

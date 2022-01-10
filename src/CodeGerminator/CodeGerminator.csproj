@@ -9,7 +9,7 @@
         <Authors>dionito</Authors>
         <Copyright>Copyright 2022 - dionito</Copyright>
         <PackageId>Dionito.CodeGerminator</PackageId>
-        <Version>0.1.3</Version>
+        <Version>0.1.4</Version>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>dotnet;dionito;codegerminator;codegenerator;germinator;generator;code;csharp</PackageTags>
